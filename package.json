@@ -1,0 +1,30 @@
+{
+  "name": "db-perf-test",
+  "version": "1.0.0",
+  "description": "Basic DB test performance framework",
+  "main": "insert.js",
+  "scripts": {
+    "test": "node insert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chussenet/db-perf-test.git"
+  },
+  "keywords": [
+    "rethinkdb",
+    "mongodb",
+    "performance"
+  ],
+  "author": "Claude Hussenet chussenet@yahoo.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chussenet/db-perf-test/issues"
+  },
+  "homepage": "https://github.com/chussenet/db-perf-test",
+  "dependencies": {
+    "object-sizeof": "^1.0.6",
+    "optimist": "^0.6.1",
+    "rethinkdb": "^2.0.0-2",
+    "underscore": "^1.8.3"
+  }
+}

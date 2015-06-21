@@ -69,7 +69,8 @@ node insert.js --dbpackage rethinkdb --nb 200000 --threads 5 --integerfield 5 --
                Processor:2.3 GHz Intel Core i7 (1/4 cores)
                Memory:16 GB 1600 MHz DDR
                Disk:SSD
-               
+
+###TEST 1               
 #### node insert.js --dbpackage mongodb --nb 200000 --threads 5 
 Document size:90 bytes.
 Mongodb:1000000 inserts in 8366 (ms)
@@ -80,6 +81,7 @@ Document size:90 bytes.
 RethinkDB:1000000 inserts in 73766 (ms)
 #####RethinkDB:13556 (inserts/s)
 
+###TEST 2
 ####node insert.js --dbpackage mongodb --nb 200000 --threads 5 --integerfield 5 --stringfield 5
 Document size:378 bytes.
 Mongodb:1000000 inserts in 16725 (ms)
@@ -90,6 +92,7 @@ Document size:378 bytes.
 RethinkDB:1000000 inserts in 153072 (ms)
 #####RethinkDB:6533 (inserts/s)
 
+###TEST 3  
 ####node insert.js --dbpackage mongodb --nb 200000 --threads 5 --integerfield 10 --stringfield 10
 Document size:738 bytes.
 Mongodb:1000000 inserts in 19908 (ms)

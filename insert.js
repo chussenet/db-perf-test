@@ -2,10 +2,10 @@ var cp = require('child_process');
 var _ = require('underscore');
 var sizeof = require('object-sizeof');
 var argv = require('optimist')
-    .default('dbpackage', "./db/stub")
-    .default('documentpackage', "./document")
-    .default('stringfield', 5)
-    .default('integerfield', 5)
+    .default('dbpackage', "stub")
+    .default('documentpackage', "document")
+    .default('stringfield', 1)
+    .default('integerfield', 1)
     .default('istsfield', true)
     .default('nb', 1000)
     .default('threads', 1)
@@ -14,8 +14,8 @@ var argv = require('optimist')
     .default('table', 'perfTest')
     .argv
 ;
-var db = require(argv.dbpackage);
-var docFactory = require(argv.documentpackage);
+var db = require("./db/"+argv.dbpackage);
+var docFactory = require("./"+argv.documentpackage);
 
 var t0=Date.now();
 var perfSummary=[];

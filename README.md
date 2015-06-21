@@ -73,20 +73,32 @@ node insert.js --dbpackage rethinkdb --nb 200000 --threads 5 --integerfield 5 --
 #### node insert.js --dbpackage mongodb --nb 200000 --threads 5 
 Document size:90 bytes.
 Mongodb:1000000 inserts in 8366 (ms)
-Mongodb:119531 (inserts/s)
+#####Mongodb:119531 (inserts/s)
 
 ####node insert.js --dbpackage rethinkdb --nb 200000 --threads 5 
 Document size:90 bytes.
 RethinkDB:1000000 inserts in 73766 (ms)
-RethinkDB:13556 (inserts/s)
+#####RethinkDB:13556 (inserts/s)
 
 ####node insert.js --dbpackage mongodb --nb 200000 --threads 5 --integerfield 5 --stringfield 5
 Document size:378 bytes.
 Mongodb:1000000 inserts in 16725 (ms)
-Mongodb:59791 (inserts/s)
+#####Mongodb:59791 (inserts/s)
 
 ####node insert.js --dbpackage rethinkdb --nb 200000 --threads 5 --integerfield 5 --stringfield 5
 Document size:378 bytes.
 RethinkDB:1000000 inserts in 153072 (ms)
-RethinkDB:6533 (inserts/s)
+#####RethinkDB:6533 (inserts/s)
+
+####node insert.js --dbpackage mongodb --nb 200000 --threads 5 --integerfield 10 --stringfield 10
+Document size:738 bytes.
+Mongodb:1000000 inserts in 19908 (ms)
+#####Mongodb:50231 (inserts/s)
+
+####node insert.js --dbpackage rethinkdb --nb 200000 --threads 5 --integerfield 10 --stringfield 10
+Document size:738 bytes.
+RethinkDB:1000000 inserts in 241984 (ms)
+#####RethinkDB:4133 (inserts/s)
+
+  
 

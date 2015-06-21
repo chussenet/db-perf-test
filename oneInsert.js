@@ -1,8 +1,8 @@
 var argv = JSON.parse(process.argv.slice(2)[0]);
 
-var db = require(argv.dbpackage);
+var db = require("./db/"+argv.dbpackage);
 var async = require("async");
-var docFactory = require(argv.documentpackage);
+var docFactory = require("./"+argv.documentpackage);
 
 db.open({db:argv.db,table:argv.table},function() {
 	var count = 0;

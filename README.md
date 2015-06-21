@@ -53,14 +53,14 @@ node insert.js [options]
 	### Example
     --db myTable [default perfTest]  
     
-## Examples
-### Insert 1M documents in mongodb with 5 threads of execution.
+## Examples and result
+#### Insert 1M documents in mongodb with 5 threads of execution.
 node insert.js --dbpackage mongodb --nb 200000 --threads 5 
 
-### Insert 1M documents in mongodb with 2 threads of execution.Documents inserted are defined with 5 string field,5 integer field and 1 timestamp field
+#### Insert 1M documents in mongodb with 2 threads of execution.Documents inserted are defined with 5 string field,5 integer field and 1 timestamp field
 node insert.js --dbpackage mongodb --nb 200000 --threads 2 --integerfield 5 --stringfield 5
 
-### Insert 1M documents in rethinkdb with 5 threads of execution.Documents inserted are defined with 5 string field,5 integer field and 1 timestamp field
+#### Insert 1M documents in rethinkdb with 5 threads of execution.Documents inserted are defined with 5 string field,5 integer field and 1 timestamp field
 node insert.js --dbpackage rethinkdb --nb 200000 --threads 5 --integerfield 5 --stringfield 5
 
 
@@ -70,22 +70,22 @@ node insert.js --dbpackage rethinkdb --nb 200000 --threads 5 --integerfield 5 --
                Memory:16 GB 1600 MHz DDR
                Disk:SSD
                
-###node insert.js --dbpackage mongodb --nb 200000 --threads 5 
+#### node insert.js --dbpackage mongodb --nb 200000 --threads 5 
 Document size:90 bytes.
 Mongodb:1000000 inserts in 8366 (ms)
 Mongodb:119531 (inserts/s)
 
-###node insert.js --dbpackage rethinkdb --nb 200000 --threads 5 
+####node insert.js --dbpackage rethinkdb --nb 200000 --threads 5 
 Document size:90 bytes.
 RethinkDB:1000000 inserts in 73766 (ms)
 RethinkDB:13556 (inserts/s)
 
-###node insert.js --dbpackage mongodb --nb 200000 --threads 5 --integerfield 5 --stringfield 5
+####node insert.js --dbpackage mongodb --nb 200000 --threads 5 --integerfield 5 --stringfield 5
 Document size:378 bytes.
 Mongodb:1000000 inserts in 16725 (ms)
 Mongodb:59791 (inserts/s)
 
-###node insert.js --dbpackage rethinkdb --nb 200000 --threads 5 --integerfield 5 --stringfield 5
+####node insert.js --dbpackage rethinkdb --nb 200000 --threads 5 --integerfield 5 --stringfield 5
 Document size:378 bytes.
 RethinkDB:1000000 inserts in 153072 (ms)
 RethinkDB:6533 (inserts/s)

@@ -72,7 +72,7 @@ node insert.js --dbpackage rethinkdb --nb 200000 --threads 5 --integerfield 5 --
                Disk:SSD
                
                MongoDB 3.0.4
-               RethinDB 2.0.3
+               RethinkDB 2.0.3
                
 ###TEST 1               
 #### node insert.js --dbpackage mongodb --nb 200000 --threads 5 

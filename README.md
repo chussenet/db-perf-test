@@ -65,11 +65,15 @@ node insert.js --dbpackage rethinkdb --nb 200000 --threads 5 --integerfield 5 --
 
 
 ## Results
-   Tested on : MacBook Pro (Retina, 15-inch, Late 2013)
+###Configuration
+               MacBook Pro (Retina, 15-inch, Late 2013)
                Processor:2.3 GHz Intel Core i7 (1/4 cores)
                Memory:16 GB 1600 MHz DDR
                Disk:SSD
-
+               
+               MongoDB 3.0.4
+               RethinDB 2.0.3
+               
 ###TEST 1               
 #### node insert.js --dbpackage mongodb --nb 200000 --threads 5 
 Document size:90 bytes.
